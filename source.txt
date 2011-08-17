@@ -1,0 +1,6 @@
+### Controls ##### get# start or init
+# quit or kill or end or exit################################# Get: vnc get 10.0.1.6
+# Start: vnc start or vnc init
+# Quit:	vnc quit or (kill or end or exit)### END ####
+
+on replaceText(find, replace, subject)	set prevTIDs to text item delimiters of AppleScript	set text item delimiters of AppleScript to find	set subject to text items of subject		set text item delimiters of AppleScript to replace	set subject to "" & subject	set text item delimiters of AppleScript to prevTIDs		return subjectend replaceTexton alfred_script(q)		set s to {"start", "init"}	set e to {"quit", "kill", "end", "exit"}		tell application "Screen Sharing"		if q is in s then			activate		else if q is in e then			quit		else if "get" is in q then			activate			GetURL my replaceText("get ", "", q)		end if	end tellend alfred_script
