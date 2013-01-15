@@ -1,36 +1,33 @@
-Screen Sharing Controls for Alfred
-============
+# Screen Sharing Controls for Alfred
 
-An AppleScript so you can start, stop and choose an IP to connect to via screen share. [Alfred App](http://alfredapp.com/). You will need Alfred and the Powerpack to use this.
+An [Alfred](http://alfredapp.com/) workflow so you can easily share a screen using VNC. [Alfred App](http://alfredapp.com/). You will need Alfred and the Powerpack to use this.
 
-Installation
-----------------
+## Installation
 
-To install Screen Sharing in Alfred double click on the extension file: Screen Sharing.alfredextension
+Just double click the `Screen Sharing.alfredworkflow` file.
 
-How to use
-----------------
+## How to use
 
-Once installed with Alfred you can run the following commands
+Just type the command `vnc` followed by a space and the IP address ot hostname of the computer you wish to connect to.
 
-	vnc start				::	Start screen sharing (or you can use init)
-	vnc quit				::	Quit screen sharing (or you can use kill, exit or end)
-    vnc get (Location) 		::  Connect to a specific URL or IP Address
-      
+## Example
+```
+vnc 10.0.1.6
+vnc mini.local
+```
 
-Examples
-----------------
-	$ vnc start
-	$ vnc quit
-	$ vnc get 10.0.1.6
+## Download
+
+[Screen Sharing](https://github.com/phpfunk/alfred-screen-sharing/archive/v2.zip)
 
 
-Download
-----------------
-[Screen Sharing](http://dl.dropbox.com/u/45930/Alfred%20Apps/Screen%20Sharing/Screen%20Sharing.alfredextension)
-    
+## Version History
 
-## Version History ##
-### 1.0.0 - August 16, 2011###
- 
-- Commit: Initial Release
+## 2.0.0 - January 14, 2013
+
+* Updated workflow to be compatible with Alfred 2
+* Removed the start/stop commands, they were useless
+
+### 1.0.0 - August 16, 2011
+
+* Commit: Initial Release
