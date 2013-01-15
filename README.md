@@ -23,7 +23,7 @@ vnc mini.local
 
 ## Version History
 
-## 2.0.0 - January 14, 2013
+### 2.0.0 - January 14, 2013
 
 * Updated workflow to be compatible with Alfred 2
 * Removed the start/stop commands, they were useless
